@@ -35,59 +35,29 @@
   <body ng-app="starter">
 
     <ion-pane>
-
-      <ion-header-bar class="bar-positive">
-        <h1 class="title">Ionic Blank Starter</h1>
+      <ion-header-bar class="bar-dark">
+        <h2 class="title">Artist List</h2>
       </ion-header-bar>
-        <ion-tabs class="tabs-icon-top">
-          <ion-tab badge="1" badge-style="badge-assertive" icon="ion-home" title="Home"></ion-tab>
-          <ion-tab icon="ion-person" title="About"></ion-tab>
-          <ion-tab icon="ion-calendar" title="Calendar"></ion-tab>
-        </ion-tabs>
-
-      <ion-content>
-
-      <div class="list list-inset">
-        <label class="item item-input">
-          <span class="input-label">First Name</span>
-          <input type="text" placeholder="Your First Name">
+      <div class="bar bar-subheader 
+        item-input-inset bar-light">
+        <label class="item-input-wrapper">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="search" placeholder="Search">
         </label>
-
-        <label class="item item-input">
-          <span class="input-label">Last Name</span>
-          <input type="text" placeholder="Your Last Name">
-        </label>
-
-        <div class="item item-divider">Favorite social media network</div>
-
-        <label class="item item-radio">
-          <input type="radio" name="social">
-          <div class="item-content">Facebook</div>
-          <i class="radio-icon ion-social-facebook"></i>
-        </label>
-
-        <label class="item item-radio">
-          <input type="radio" name="social">
-          <div class="item-content">Twitter</div>
-          <i class="radio-icon ion-social-twitter"></i>
-        </label>
-
-        <label class="item item-radio">
-          <input type="radio" name="social">
-          <div class="item-content">YouTube</div>
-          <i class="radio-icon ion-social-youtube"></i>
-        </label>
-
-        <div class="item item-toggle">
-          <span class="input-label">Awesomeness</span>
-          <label class="toggle">
-            <input type="checkbox">
-            <div class="track"><div class="handle"></div></div>
-          </label>
-        </div>
       </div>
-
+      <ion-content class="has-subheader">
+        <ion-list>
+          <ion-item class="item-thumbnail-left 
+            item-text-wrap">
+            <img src="http://placehold.it/100x100"
+              alt="Photo">
+            <h2>Name</h2>
+            <h3>Reknown</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus a nobis, corporis quos fuga, ex incidunt nihil vero architecto ratione quae quasi? Necessitatibus assumenda rem dolore suscipit quaerat. Enim, aperiam.</p>
+          </ion-item>
+        </ion-list>
       </ion-content>
     </ion-pane>
+    
   </body>
 </html>
